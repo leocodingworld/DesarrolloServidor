@@ -57,6 +57,8 @@ class Producto {
 		$productos = $productos -> fetchAll(PDO::FETCH_CLASS, "Producto");
 
 		return $productos;
+
+		$conex = null;
 	}
 }
 
