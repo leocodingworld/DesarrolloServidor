@@ -1,0 +1,6 @@
+*.zip
+**/vendor
+**/cache
+**/*.lock
+*.lock
+

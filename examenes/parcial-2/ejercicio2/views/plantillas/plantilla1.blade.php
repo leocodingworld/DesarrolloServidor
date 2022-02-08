@@ -9,7 +9,7 @@
 	<body>
 		<div>
 			<h2>@yield('cabecera')</h2>
-			@yield('content')
+			@yield('contenido')
 		</div>
 	</body>
 </html>

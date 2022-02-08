@@ -1,6 +1,6 @@
 <?php
-
 namespace Clases;
+require "../vendor/autoload.php";
 
 use PDO;
 use PDOException;
@@ -8,9 +8,9 @@ use PDOException;
 class Conexion {
 	public static function conectar() {
 		define("HOST", "localhost"); //Aqui ira el host de nuestra aplicacion
-		define("USER", "root"); // Usuario de la base de datos
-		define("PASS", ""); // Contraseña del usuario
-		define("DATABASE", "deporte"); // Nombre de la base de datos
+		define("USER", "dwes"); // Usuario de la base de datos
+		define("PASS", "abc123."); // Contraseña del usuario
+		define("DATABASE", "ocasion_examen"); // Nombre de la base de datos
 		define("DATOS", "mysql:host=" . HOST . ";dbname=" . DATABASE); //Datos de la base de datos
 	
 		try{   
@@ -26,7 +26,7 @@ class Conexion {
 		}
 	
 		return $conex;
-	}
+	} 
 }
 
 ?>
