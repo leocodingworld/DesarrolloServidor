@@ -2,6 +2,5 @@
 **/vendor
 **/cache
 **/*.lock
-*.lock
-
-*.json
+**/composer.lock
+**/composer.json
