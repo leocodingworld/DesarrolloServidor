@@ -1,0 +1,12 @@
+#view-votos {
+	display: none;
+}
+
+td, th {
+	text-align: center;
+}
+
+img {
+	width: 20px;
+	height: 18px;
+}

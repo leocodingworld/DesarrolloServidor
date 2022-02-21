@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" />
+	<script src="./utiles.js"></script>
+	<script src="./index.js"></script>
+	<title>Ajax - Votos</title>
+</head>
+
+<body>
+	<main id="app">
+
+		<article id="view-login">
+
+			<form id="login" method="post">
+
+				<section id="form1">
+					<label for="usuario">Usuario</label>
+					<input type="text" name="usuario" id="inUser">
+				</section>
+
+				<section id="form2">
+					<label for="passwd">Contraseña</label>
+					<input type="password" name="passwd" id="inPasswd">
+				</section>
+
+				<button type="button" id="btnForm">Iniciar sesión</button>
+				<div id="resultado"></div>
+
+			</form>
+
+		</article>
+
+		<article id="view-votos">
+			<table>
+				<thead>
+					<th>Producto</th>
+					<th colspan="2">Valoraciones</th>
+					<th>Votar</th>
+				</thead>
+				<tbody id="productos">
+
+				</tbody>
+			</table>
+		</article>
+	</main>
+</body>
+
+</html>

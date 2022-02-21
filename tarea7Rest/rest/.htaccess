@@ -1,0 +1,9 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^operaciones/precioProducto/([0-9]{1,})$  /RestController.php?view=pvp&id=$1 [nc,qsa]
+RewriteRule ^operaciones/familias/$  /RestController.php?view=familias [nc,qsa]
+RewriteRule ^operaciones/productofamilia/([A-Za-z]{1,})/$  /RestController.php?view=familiasproductos&familia=$1 [nc,qsa]
+RewriteRule ^operaciones/stocktiendaproducto/([0-9]{1,})/([0-9]{1,})/$  /RestController.php?view=stock&producto=$1&tienda=$1 [nc,qsa]
